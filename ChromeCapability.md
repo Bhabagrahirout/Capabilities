@@ -8,10 +8,11 @@
 
 	ChromeOptions op=new ChromeOptions();
 
-*	 we can add proxy   
-	 Proxy proxy = new Proxy();
-	 proxy.setHttpProxy("myhttpproxy:3337");
-	 op.setCapability("proxy", proxy);
+ *		we can add proxy   
+  		Proxy proxy = new Proxy();
+		proxy.setHttpProxy("myhttpproxy:3337");
+		op.setCapability("proxy", proxy);
+		
 		
 	      
 *	   size   
@@ -82,7 +83,7 @@
         prefs.put("profile.managed_default_content_settings.images", 2);  for 1 enable images
         
 
-       op.setExperimentalOption("prefs", prefs);
+  *     op.setExperimentalOption("prefs", prefs);
 		// more are available
         
 		
