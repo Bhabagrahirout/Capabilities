@@ -20,8 +20,12 @@
 	noRest=false--->IN Android : The app will start as if it was freshly installed, 				     but it is not reinstalled.  
 					  IN Ios    : The app is removed and reinstalled, which results 					in a completely clean state.  
 	fastReset=true-->Appium will reset the app by clearing the app data, but without   		     uninstalling and reinstalling the app   
-	fastRest=false-->Appium will uninstall and then reinstall the app.It takes 				longer because of the uninstall/reinstall process.
-   As per requirment use one of them.
+	fastRest=false-->Appium will uninstall and then reinstall the app.It takes 				longer because of the uninstall/reinstall process.  
+	 As per requirment use one of them.
+	
+	
+				  
+  
 
 
 	Also we can use all this in MobileCapability i.e  Appium Java client   
