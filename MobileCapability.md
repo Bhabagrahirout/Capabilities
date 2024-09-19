@@ -32,6 +32,7 @@
 		cap.setCapability(MobileCapabilityType.UDID, "42006409e0c6253b");  
 		cap.setCapability(MobileCababilityType.APP_ACTIVITY,"com.google.android.chrome.Main")
 		 
+   In some case Mobilecapabitype apppackage and activity not work so add in generaly
 *       cap.setCapability("apmosys.user", "lighthouse.apmosys.com");   
    
    
