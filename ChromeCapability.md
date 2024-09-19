@@ -6,7 +6,7 @@
 *   ChromeOptions class  implements the Capabilities interface, allowing you to specify other 	    WebDriver capabilities not only ChromeDriver. *
 
 
-*	ChromeOptions op=new ChromeOptions();
+	ChromeOptions op=new ChromeOptions();
 
 *	 // we can add proxy 
 		Proxy proxy = new Proxy();
@@ -24,7 +24,6 @@
 		op.addArguments("window-size=1280,720");
 		op.addArguments("window-size=1024,768");
 		op.addArguments("window-size=800,600");
-
 //		if you give all the size it take the 1st one
 		
 		
