@@ -14,7 +14,8 @@
 	cp.setCapability("pageLoadStrategy", "eager");  // To control how the page loads
 	
 	
-	If you want to work with Chrome, it's better to use ChromeOptions. However, if you're working with mobile browsers or devices, DesiredCapabilities is more appropriate."
+	If you want to work with Chrome, it's better to use ChromeOptions. However, if you're   
+	 working with mobile browsers or devices, DesiredCapabilities is more appropriate."
 
 
 ##### why
