@@ -25,7 +25,7 @@
 	
 
  *	Also we can use all this in MobileCapability i.e  Appium Java client   
-		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+*		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14");
 		cap.setCapability(MobileCapabilityType.NO_RESET, "true");
 		cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "2000");
