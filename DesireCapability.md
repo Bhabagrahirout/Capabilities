@@ -14,4 +14,12 @@
 	cp.setCapability("pageLoadStrategy", "eager");  // To control how the page loads
 	
 	
-	 
+	If you want to work with Chrome, it's better to use ChromeOptions. However, if you're working with mobile browsers or devices, DesiredCapabilities is more appropriate."
+
+
+##### why
+
+ *   ChromeOptions: It's specifically designed to configure Chrome browser settings, and it is now the preferred approach when working with Chrome in modern Selenium versions.
+ *   DesiredCapabilities: This is more commonly used when working with mobile browsers or when you need to set capabilities for different types of devices (e.g., Android or iOS) in mobile testing frameworks like Appium. It is still used for setting device-specific capabilities.
+
+	
