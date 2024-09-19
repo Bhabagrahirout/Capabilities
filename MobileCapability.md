@@ -34,6 +34,9 @@
 		 
  	In some case Mobilecapabitype apppackage and activity not work so add in generaly
  *	cap.setCapability("apmosys.user", "lighthouse.apmosys.com");  
+ 
+ 
+ 
 	cap.setCapability("apmosys.accessToken",
 	"25f41fbcf95442feb08be69c486e3da03b9c9c1bbf154ab9bca4a4e16453e445");
 	
