@@ -37,7 +37,7 @@
    
    
    
-  *  cap.setCapability("apmosys.user", "lighthouse.apmosys.com");  
+ *  cap.setCapability("apmosys.user", "lighthouse.apmosys.com");  
 
  
 	cap.setCapability("apmosys.accessToken",
