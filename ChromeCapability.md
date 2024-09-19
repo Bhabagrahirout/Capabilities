@@ -8,20 +8,20 @@
 
 	ChromeOptions op=new ChromeOptions();
 
- *		we can add proxy   
+ *		We can add proxy   
   		Proxy proxy = new Proxy();
 		proxy.setHttpProxy("myhttpproxy:3337");
 		op.setCapability("proxy", proxy);
 		
 		
 	      
-*	   size   
+*	   Size   
 	   op.addArguments("start-maximized");
 	   op.addArguments("window-size=1366,768");//default
 	   op.addArguments("window-size=1280,720");
 	   op.addArguments("window-size=1024,768");
 	   op.addArguments("window-size=800,600");
-	   if you give all the size it take the 1st one 
+	   if you give all the sizes it take the 1st one 
 		
 		
 *		window position
@@ -54,7 +54,7 @@
 		op.addArguments("--enable-javascript");
 		op.addArguments("--enable-tab-audio-muting");
 		op.addArguments("--enable-notifications");
-		op.addArguments("--allow-http-screen-capture");// that allow capture screen shot in site
+		op.addArguments("--allow-http-screen-capture");// that allow capture screenshot in site
 	
 *		version
 		op.addArguments("--version");
@@ -62,10 +62,10 @@
 		
 *		remove chrome is automated
         op.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
-        it remove the text that showing chrome is being  controled by automated test s/w
+        it remove the text that shows chrome is being  controlled by automated test s/w
         
 		
-  ***    using preference add all  preferences at a time  ***
+  ***    Using preference add all  preferences at a time  ***
     
   *      String downloadFilepath = "/home/Videos";
          HashMap<String, Object> prefs = new HashMap<>();
@@ -84,12 +84,12 @@
         
 
   *     op.setExperimentalOption("prefs", prefs);
-		// more are available
+		//More are available
         
 		
    ** Preferences: use in chromeoptions **    
 
-*    -Preferences are settings that customize the behavior of the browser and they are specific to the Chrome browser and can be set using ChromeOptions.  
+*    -Preferences are settings that customize the browser's behavior and are specific to the Chrome browser and can be set using ChromeOptions.  
 	 -Preferences are typically used to configure options such as default download Filepath directory, disabling   pop-up blocking, setting browser language, etc.   
   	  
 	 -Examples   
