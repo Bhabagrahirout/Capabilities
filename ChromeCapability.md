@@ -6,87 +6,86 @@
 *   ChromeOptions class  implements the Capabilities interface, allowing you to specify other 	    WebDriver capabilities not only ChromeDriver. *
 
 
-*	ChromeOptions op=new ChromeOptions();
+	ChromeOptions op=new ChromeOptions();
 
-*	 // we can add proxy 
-		Proxy proxy = new Proxy();
-		proxy.setHttpProxy("myhttpproxy:3337");
-		op.setCapability("proxy", proxy);
+*	 we can add proxy   
+	Proxy proxy = new Proxy();
+	proxy.setHttpProxy("myhttpproxy:3337");
+	op.setCapability("proxy", proxy);
+		
 
-*	 // Add a ChromeDriver-specific capability.
-		op.addExtensions(new File("/path/to/extension.crx")); 
+*	  Add a ChromeDriver-specific capability.  
+	  op.addExtensions(new File("/path/to/extension.crx")); 
+	 
 	      
-	     
-	      
-*		//size
-		op.addArguments("start-maximized");
-		op.addArguments("window-size=1366,768");//default
-		op.addArguments("window-size=1280,720");
-		op.addArguments("window-size=1024,768");
-		op.addArguments("window-size=800,600");
-
-//		if you give all the size it take the 1st one
+*	   size   
+	   op.addArguments("start-maximized");
+	   op.addArguments("window-size=1366,768");//default
+	   op.addArguments("window-size=1280,720");
+	   op.addArguments("window-size=1024,768");
+	   op.addArguments("window-size=800,600");
+	   if you give all the size it take the 1st one 
 		
 		
-*		//window position
+*		window position
 		op.addArguments("--window-position=100,100"); //left and top
 		op.addArguments("--window-position=-100,-200");// right and buttom
 				
-*		//incognito
+*		incognito
 		op.addArguments("incognito");
 		
 		
-*		//headless
+*		headless
 		op.addArguments("headless");
 	    headless platform phantomjs,zombie.js but  after chrome added this featurs they are not used.
 		
 		 
-*		// add extension
+*	    add extension
 		the extension are not auto add still you are using
 		op.addExtensions(new File("/home/apmosys/Videos/Dark-Reader.crx"));
 		op.addArguments("load-extension="+" extensionId);
 		
 		
-*		//diseable
+*		diseable
 		op.addArguments("--disable-extensions");
 		op.addArguments("--disable-popup-blocking");
 		op.addArguments("--disable-notifications");
 		op.addArguments("--ignore-certificate-errors");
 		op.addArguments("--disable-translate");
 	
-*		//enable
+*		enable
 		op.addArguments("--enable-javascript");
 		op.addArguments("--enable-tab-audio-muting");
 		op.addArguments("--enable-notifications");
 		op.addArguments("--allow-http-screen-capture");// that allow capture screen shot in site
 	
-*		//version
+*		version
 		op.addArguments("--version");
 	
 		
-*		//remove chrome is automated
+*		remove chrome is automated
         op.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); 
         it remove the text that showing chrome is being  controled by automated test s/w
         
 		
   ***    using preference add all  preferences at a time  ***
     
-  *      String downloadFilepath = "/home/apmosys/Videos";
+  *      String downloadFilepath = "/home/Videos";
          HashMap<String, Object> prefs = new HashMap<>();
         
-  *      prefs.put("profile.default_content_settings.popups", 0); //for enable 1
+  *     prefs.put("profile.default_content_settings.popups", 0);  for enable 1
         prefs.put("download.default_directory", downloadFilepath);
         prefs.put("geolocation", true);
         prefs.put("media_stream", true);
-        // websites that require access to the webcam and microphone for features like   	           video conferencing, live streaming, audio recording 
+        websites that require access to the webcam and microphone for features like   	           video conferencing, live streaming, audio recording 
       
-  *     prefs.put("profile.default_content_setting_values.notifications", 2); //for  1 Allow
+  *     prefs.put("profile.default_content_setting_values.notifications", 2); for  1 Allow
         prefs.put("profile.block_third_party_cookies", true);
-        prefs.put("profile.default_content_setting_values.automatic_downloads", 2); //for  1 Allow
-        prefs.put("profile.managed_default_content_settings.images", 2); // for 1 enable images
+        prefs.put("profile.default_content_setting_values.automatic_downloads", 2); for  1 Allow
+        prefs.put("profile.managed_default_content_settings.images", 2);  for 1 enable images
         
 
- *      op.setExperimentalOption("prefs", prefs);
+       op.setExperimentalOption("prefs", prefs);
 		// more are available
         
 		
