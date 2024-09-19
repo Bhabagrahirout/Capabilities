@@ -24,7 +24,7 @@
 	 As per requirment use one of them.
 	
 
- *	Also we can use all this in MobileCapability i.e  Appium Java client   
+ 	Also we can use all this in MobileCapability i.e  Appium Java client   
 *		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14");
 		cap.setCapability(MobileCapabilityType.NO_RESET, "true");
@@ -32,12 +32,12 @@
 		cap.setCapability(MobileCapabilityType.UDID, "42006409e0c6253b");  
 		cap.setCapability(MobileCababilityType.APP_ACTIVITY,"com.google.android.chrome.Main")
 		 
- *	In some case Mobilecapabitype apppackage and activity not work so add in generaly.
-	cap.setCapability("apmosys.user", "lighthouse.apmosys.com");
+ 	In some case Mobilecapabitype apppackage and activity not work so add in generaly.
+*	cap.setCapability("apmosys.user", "lighthouse.apmosys.com");
 	cap.setCapability("apmosys.accessToken",
 	"25f41fbcf95442feb08be69c486e3da03b9c9c1bbf154ab9bca4a4e16453e445");
 
 
- *	Add user capability that are validate by the url that are design in such way in server side .
-	URL url = new URL("https://lighthouseprotean.apmosys.com/wd/hub");
+ 	Add user capability that are validate by the url that are design in such way in server side .
+*	URL url = new URL("https://lighthouseprotean.apmosys.com/wd/hub");
 	AppiumDriver<WebElement> driver=new AndroidDriver<>(url,cap);
