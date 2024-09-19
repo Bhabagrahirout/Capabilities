@@ -89,9 +89,9 @@
 		
    ** Preferences: use in chromeoptions **    
 
-*    -Preferences are settings that customize the behavior of the browser.
-     -They are specific to the Chrome browser and can be set using ChromeOptions.
-     -Preferences are typically used to configure options such as default downloadFilepath   
+*    -Preferences are settings that customize the behavior of the browser and they are specific to the Chrome browser and can be set using ChromeOptions.
+     
+*     -Preferences are typically used to configure options such as default downloadFilepath   
   	  directory, disabling   pop-up blocking, setting browser language, etc.
      -Examples   
 		download.default_directory, profile.default_content_settings.popups, intl.accept_languages,  
