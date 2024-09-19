@@ -9,14 +9,10 @@
 	ChromeOptions op=new ChromeOptions();
 
 *	 we can add proxy   
-	Proxy proxy = new Proxy();
-	proxy.setHttpProxy("myhttpproxy:3337");
-	op.setCapability("proxy", proxy);
+	 Proxy proxy = new Proxy();
+	 proxy.setHttpProxy("myhttpproxy:3337");
+	 op.setCapability("proxy", proxy);
 		
-
-*	  Add a ChromeDriver-specific capability.  
-	  op.addExtensions(new File("/path/to/extension.crx")); 
-	 
 	      
 *	   size   
 	   op.addArguments("start-maximized");
@@ -77,7 +73,8 @@
         prefs.put("download.default_directory", downloadFilepath);
         prefs.put("geolocation", true);
         prefs.put("media_stream", true);
-        websites that require access to the webcam and microphone for features like   	           video conferencing, live streaming, audio recording 
+        websites that require access to the webcam and microphone for features like   
+		video conferencing, live streaming, audio recording 
       
   *     prefs.put("profile.default_content_setting_values.notifications", 2); for  1 Allow
         prefs.put("profile.block_third_party_cookies", true);
