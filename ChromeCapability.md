@@ -49,12 +49,16 @@
 		op.addArguments("--disable-notifications");
 		op.addArguments("--ignore-certificate-errors");
 		op.addArguments("--disable-translate");
+		op.addArguments("--disable-infobars"); Disable "Chrome is being controlled by automated test software"  
+		op.addArguments("--disable-dev-shm-usage"); Overcome limited resource problems in Docker containers
+		
 	
 *		enable
 		op.addArguments("--enable-javascript");
 		op.addArguments("--enable-tab-audio-muting");
 		op.addArguments("--enable-notifications");
 		op.addArguments("--allow-http-screen-capture");// that allow capture screenshot in site
+		op.addArguments("--remote-allow-origins=*");
 	
 *		version
 		op.addArguments("--version");
