@@ -8,7 +8,7 @@
 
 	ChromeOptions op=new ChromeOptions();
 
-*	 // we can add proxy 
+*	  we can add proxy 
 		Proxy proxy = new Proxy();
 		proxy.setHttpProxy("myhttpproxy:3337");
 		op.setCapability("proxy", proxy);
