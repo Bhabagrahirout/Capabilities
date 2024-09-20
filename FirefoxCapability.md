@@ -1,1 +1,1 @@
-# Capabilities
+#  Firefox Capabilities
