@@ -38,7 +38,7 @@
 	 		"**************************************************************");
 	 		 Add user capability that are validate by the url that are design in such way in server side .
   Add capability in driver
-*       URL url = new URL("https://lighthouseprotean.apmosys.com/wd/hub");  
+*       URL url = new URL("https://lighthouseprotean.google.com/wd/hub");  
 		AppiumDriver<WebElement> driver=new AndroidDriver<>(url,cap);   
    
  
