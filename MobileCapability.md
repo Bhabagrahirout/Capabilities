@@ -33,8 +33,8 @@
 		cap.setCapability(MobileCababilityType.APP_ACTIVITY,"com.google.android.chrome.Main")
 		 
    In some case Mobilecapabitype apppackage and activity not work so add in generaly
-*       cap.setCapability("apmosys.user", "lighthouse.apmosys.com");     
-		cap.setCapability("apmosys.accessToken",
+*       cap.setCapability("google.user", "lighthouse.google.com");     
+		cap.setCapability("google.accessToken",
 	 		"**************************************************************");
 	 		 Add user capability that are validate by the url that are design in such way in server side .
   Add capability in driver
