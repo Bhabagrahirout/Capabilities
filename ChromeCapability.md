@@ -63,7 +63,7 @@
 
 *		SSL certificate errors   
         image
-		![altText](https://github.com/Bhabagrahirout/Capabilities/blob/main/SSL%20Error.png)    
+		![SSL Error Image](https://github.com/Bhabagrahirout/Capabilities/blob/main/SSL%20Error.png)    
 		op.setAcceptInsecureCerts(true); 
 		
 		
