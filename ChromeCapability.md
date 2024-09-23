@@ -40,6 +40,7 @@
 *	    add extension
 		First add  crx extractor extension to chrome , which enables to download extensions in .crx format.
 		op.addExtensions(new File("/home/apmosys/Videos/Dark-Reader.crx"));
+ 		We can block ads from a website  by using extensions like UBlockOrigin, AdBlocks etc
 	
 		
 		
