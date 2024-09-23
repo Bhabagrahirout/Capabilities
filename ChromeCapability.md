@@ -59,7 +59,14 @@
 		op.addArguments("--enable-tab-audio-muting");
 		op.addArguments("--enable-notifications");
 		op.addArguments("--allow-http-screen-capture");// that allow capture screenshot in site
-		op.addArguments("--remote-allow-origins=*");
+		op.addArguments("--remote-allow-origins=*");  
+
+*		SSL certificate errors   
+        image
+		.   
+		op.setAcceptInsecureCerts(true); 
+		
+		
 	
 *		version
 		op.addArguments("--version");
