@@ -38,9 +38,9 @@
 		
 		 
 *	    add extension
-		the extension are not auto add still you are using
+		First add  crx extractor extension to chrome , which enables to download extensions in .crx format.
 		op.addExtensions(new File("/home/apmosys/Videos/Dark-Reader.crx"));
-		op.addArguments("load-extension="+" extensionId);
+	
 		
 		
 *		diseable
